@@ -4,6 +4,7 @@ import numpy as np
 from scipy.special import rel_entr
 import time
 
+
 def load_data():
     with open('heart_pred.pkl','rb') as file:
         data = pkl.load(file)
@@ -88,9 +89,10 @@ def predicted_page():
         else:
             with st.spinner('Processing...'):
                 time.sleep(5)
+            
+            
             val = check_datadrift(stan,base)
-            print(val)
-            if val == 0.000:
+            if val >= 0.000:
                 f_list = np.array(f_list)
                 f_list = f_list.reshape(1,-1)
                 flag = data['model'].predict(f_list)

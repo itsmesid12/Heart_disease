@@ -22,10 +22,9 @@ def docs():
     
     with features:
         st.header('The Features List')
-    
         st.markdown('* **Age** -  The most important risk factor in developing cardiovascular or heart diseases, with approximately a tripling of risk with each decade of life. The risk of stroke doubles every decade after age 55')
         st.markdown('* **Gender** - Men are at greater risk of heart disease than pre-menopausal women.If a female has diabetes, she is more likely to develop heart disease than a male with diabetes.')
-        st.markdown('* **Chest pain type** \n1: Typical angina\n2: Atypical angina3\n3:Non-anginal pain\n4: Asymptomatic')
+        st.markdown('* **Chest pain type** * 1: Typical angina * 2: Atypical angina * 3:Non-anginal pain\n4: Asymptomatic')
         st.markdown('* **Blood pressure** -  High blood pressure can damage arteries that feed your heart. High blood pressure that occurs with other conditions, such as obesity, high cholesterol or diabetes, increases your risk even more.')
         st.markdown('* **Cholesterol** - A high level of low-density lipoprotein (LDL) cholesterol (the “bad” cholesterol) is most likely to narrow arteries.')
         st.markdown('* **FBS over 120** - Not producing enough of a hormone secreted by pancreas (insulin) or not responding to insulin properly causes your body’s blood sugar levels to rise, increasing your risk of a heart attack.')

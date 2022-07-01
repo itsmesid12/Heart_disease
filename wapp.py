@@ -13,13 +13,11 @@ c2.write('### HeartC ')
 st.sidebar.write('')
 st.sidebar.write('')
 
-opt = st.sidebar.selectbox('Menu',['Documentation','HeartC','EDA','Model Monitoring'])
+opt = st.sidebar.selectbox('Menu',['Documentation','HeartC','Model Monitoring'])
 
 if opt == 'Documentation':
     docs()
 elif opt == 'HeartC':
     predicted_page()
-elif opt == 'EDA':
-    st.write('Exploritary Data Analysis')
 else:
     model_monitoring_doc()
